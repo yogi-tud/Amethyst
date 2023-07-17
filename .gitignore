@@ -1,4 +1,6 @@
-/.cache
+.p4config
+*~
+\#*
+/build
 /.vscode
-/build*
-.~lock.*
+

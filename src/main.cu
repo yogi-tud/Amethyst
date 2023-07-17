@@ -152,6 +152,9 @@ int main(int argc, char** argv)
         memset(h_data1, 0xFF, data_size);
         memset(h_data2, 0xFF, data_size);
     }
+   
+   //TODO REMOVE, SET MASK TO ZERO FOR COMP STORE. ADD PARAMETER FOR COMP MASK BEHAVIOR
+   memset(h_data2, 0x00, data_size);
 
     // memcpy to gpu
     uint64_t* d_data1;
@@ -176,23 +179,24 @@ int main(int argc, char** argv)
     DECLARE_AND_CALL(bench_compressstore_baseline_cub);
    DECLARE_AND_CALL(bench_compressstore_slabs);
 
-      DECLARE_AND_CALL(bench_groupby_sm_array);
+  //    DECLARE_AND_CALL(bench_groupby_sm_array);
    //  DECLARE_AND_CALL(bench_groupby_sort_cub); // FIXME
 
-    DECLARE_AND_CALL(bench_hop_baseline);
-   DECLARE_AND_CALL(bench_hop_nogaps);
-    DECLARE_AND_CALL(bench_hop_slabs);
+  //  DECLARE_AND_CALL(bench_hop_baseline);
+  // DECLARE_AND_CALL(bench_hop_nogaps);
+  //  DECLARE_AND_CALL(bench_hop_slabs);
+   // DECLARE_AND_CALL(bench_binary_op_baseline);
     }
 
     if(bench_part == 1 || bench_part == 2)
     {
-    DECLARE_AND_CALL(bench_binary_op_baseline);
-    DECLARE_AND_CALL(bench_binary_op_nogaps);
-    DECLARE_AND_CALL(bench_binary_op_slabs);
+    
+ //   DECLARE_AND_CALL(bench_binary_op_nogaps);
+  //  DECLARE_AND_CALL(bench_binary_op_slabs);
 
-    DECLARE_AND_CALL(bench_filter_baseline);
-    DECLARE_AND_CALL(bench_filter_nogaps);
-    DECLARE_AND_CALL(bench_filter_slabs);
+  //  DECLARE_AND_CALL(bench_filter_baseline);
+  //  DECLARE_AND_CALL(bench_filter_nogaps);
+ //   DECLARE_AND_CALL(bench_filter_slabs);
     }
 
 
