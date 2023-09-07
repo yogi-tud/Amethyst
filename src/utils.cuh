@@ -6,7 +6,8 @@
 #include <cstddef>
 #include <cassert>
 #include <bitset>
-
+#include "fast_prng.cuh"
+#include <string>
 #define UNUSED(VAR) (void)(true ? (void)0 : ((void)(VAR)))
 
 // TODO: improve this
@@ -16,6 +17,7 @@ constexpr size_t clog2(size_t v)
     while (v >>= 1) res++;
     return res;
 }
+
 
 inline void error(const char* error)
 {

@@ -33,6 +33,8 @@ float bench_compressstore_slabs(
     //printf("elems per slab: %lu\n", 64 / bits);
     //printf("element count: %lu\n", element_count);
 
+
+
     CUDA_QUICKTIME(&time, {
         //puts("elements: ");
         //gpu_buffer_print_le(d_elements, 0, element_count);
