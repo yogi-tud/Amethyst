@@ -22,7 +22,7 @@ float bench_groupby_sm_array(
 {
     constexpr size_t elems_per_slab = 64 / bits;
     typedef typename tight_type<bits>::cuda_type cuda_type;
-    constexpr size_t max_group_count = (size_t)1 << bits;
+    constexpr size_t max_group_count = (size_t)1 << bits;  
     cuda_type* d_aggregates_temp;
     size_t aggregates_temp_size = (sizeof(cuda_type) + sizeof(unsigned int)) * max_group_count;
     CUDA_TRY(cudaMalloc(&d_aggregates_temp, aggregates_temp_size));

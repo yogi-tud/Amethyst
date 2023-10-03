@@ -1,0 +1,8 @@
+This directory contains both data used in the paper and also additional data.
+/nvcc contains all but compaction experiments run on the nvcc compiler instead of clang
+/comp has a variety of different compaction data sets.
+the naming schema consists of cub? + distribution + selectivity
+example: amethyst instead of cub, single cluster, 0.5 -> sc_0.5
+
+64_*
+256_* contain smaller data sizes per array data

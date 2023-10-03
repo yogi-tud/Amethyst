@@ -251,7 +251,7 @@ int main(int argc, char** argv)
         memset(h_data2, 0xFF, data_size);
     }
    
-
+   
     std::vector<uint8_t> im; //intermediate mask
     im.reserve(data_size);
      
@@ -305,27 +305,27 @@ int main(int argc, char** argv)
     {
 
     
-  //  DECLARE_AND_CALL(bench_compressstore_baseline_cub);
-   DECLARE_AND_CALL(bench_compressstore_slabs);
+    DECLARE_AND_CALL(bench_compressstore_baseline_cub);
+    DECLARE_AND_CALL(bench_compressstore_slabs);
 
-    //  DECLARE_AND_CALL(bench_groupby_sm_array);
+      DECLARE_AND_CALL(bench_groupby_sm_array);
    //  DECLARE_AND_CALL(bench_groupby_sort_cub); // FIXME
 
-  //  DECLARE_AND_CALL(bench_hop_baseline);
-  // DECLARE_AND_CALL(bench_hop_nogaps);
-  //  DECLARE_AND_CALL(bench_hop_slabs);
-   // DECLARE_AND_CALL(bench_binary_op_baseline);
+    DECLARE_AND_CALL(bench_hop_baseline);
+   DECLARE_AND_CALL(bench_hop_nogaps);
+    DECLARE_AND_CALL(bench_hop_slabs);
+   DECLARE_AND_CALL(bench_binary_op_baseline);
     }
 
     if(bench_part == 1 || bench_part == 2)
     {
     
- //   DECLARE_AND_CALL(bench_binary_op_nogaps);
-  //  DECLARE_AND_CALL(bench_binary_op_slabs);
+    DECLARE_AND_CALL(bench_binary_op_nogaps);
+    DECLARE_AND_CALL(bench_binary_op_slabs);
 
-  //  DECLARE_AND_CALL(bench_filter_baseline);
-  //  DECLARE_AND_CALL(bench_filter_nogaps);
- //   DECLARE_AND_CALL(bench_filter_slabs);
+    DECLARE_AND_CALL(bench_filter_baseline);
+    DECLARE_AND_CALL(bench_filter_nogaps);
+    DECLARE_AND_CALL(bench_filter_slabs);
     }
 
 

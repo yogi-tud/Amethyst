@@ -1,0 +1,7 @@
+visualisations:
+
+64 mib per array : 3x3_64.pdf
+256 mib per array : 3x3_256.pdf
+1024 mib per array : 3x3_1024.pdf
+
+Compaction benchmark are missing for smaller data sizes.
