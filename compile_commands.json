@@ -1,0 +1,86 @@
+[
+{
+  "directory": "/home/fett/repos/comp",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler -DTHRUST_IGNORE_CUB_VERSION_CHECK --options-file CMakeFiles/gpu_elementstuffing.dir/includes_CUDA.rsp -std=c++14 \"--generate-code=arch=compute_75,code=[compute_75,sm_75]\" \"--generate-code=arch=compute_61,code=[compute_61,sm_61]\" -x cu -c /home/fett/repos/comp/src/benchs/bench_binary_op_baseline.cu -o CMakeFiles/gpu_elementstuffing.dir/src/benchs/bench_binary_op_baseline.cu.o",
+  "file": "/home/fett/repos/comp/src/benchs/bench_binary_op_baseline.cu",
+  "output": "CMakeFiles/gpu_elementstuffing.dir/src/benchs/bench_binary_op_baseline.cu.o"
+},
+{
+  "directory": "/home/fett/repos/comp",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler -DTHRUST_IGNORE_CUB_VERSION_CHECK --options-file CMakeFiles/gpu_elementstuffing.dir/includes_CUDA.rsp -std=c++14 \"--generate-code=arch=compute_75,code=[compute_75,sm_75]\" \"--generate-code=arch=compute_61,code=[compute_61,sm_61]\" -x cu -c /home/fett/repos/comp/src/benchs/bench_binary_op_nogaps.cu -o CMakeFiles/gpu_elementstuffing.dir/src/benchs/bench_binary_op_nogaps.cu.o",
+  "file": "/home/fett/repos/comp/src/benchs/bench_binary_op_nogaps.cu",
+  "output": "CMakeFiles/gpu_elementstuffing.dir/src/benchs/bench_binary_op_nogaps.cu.o"
+},
+{
+  "directory": "/home/fett/repos/comp",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler -DTHRUST_IGNORE_CUB_VERSION_CHECK --options-file CMakeFiles/gpu_elementstuffing.dir/includes_CUDA.rsp -std=c++14 \"--generate-code=arch=compute_75,code=[compute_75,sm_75]\" \"--generate-code=arch=compute_61,code=[compute_61,sm_61]\" -x cu -c /home/fett/repos/comp/src/benchs/bench_binary_op_slabs.cu -o CMakeFiles/gpu_elementstuffing.dir/src/benchs/bench_binary_op_slabs.cu.o",
+  "file": "/home/fett/repos/comp/src/benchs/bench_binary_op_slabs.cu",
+  "output": "CMakeFiles/gpu_elementstuffing.dir/src/benchs/bench_binary_op_slabs.cu.o"
+},
+{
+  "directory": "/home/fett/repos/comp",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler -DTHRUST_IGNORE_CUB_VERSION_CHECK --options-file CMakeFiles/gpu_elementstuffing.dir/includes_CUDA.rsp -std=c++14 \"--generate-code=arch=compute_75,code=[compute_75,sm_75]\" \"--generate-code=arch=compute_61,code=[compute_61,sm_61]\" -x cu -c /home/fett/repos/comp/src/benchs/bench_compressstore_slabs.cu -o CMakeFiles/gpu_elementstuffing.dir/src/benchs/bench_compressstore_slabs.cu.o",
+  "file": "/home/fett/repos/comp/src/benchs/bench_compressstore_slabs.cu",
+  "output": "CMakeFiles/gpu_elementstuffing.dir/src/benchs/bench_compressstore_slabs.cu.o"
+},
+{
+  "directory": "/home/fett/repos/comp",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler -DTHRUST_IGNORE_CUB_VERSION_CHECK --options-file CMakeFiles/gpu_elementstuffing.dir/includes_CUDA.rsp -std=c++14 \"--generate-code=arch=compute_75,code=[compute_75,sm_75]\" \"--generate-code=arch=compute_61,code=[compute_61,sm_61]\" -x cu -c /home/fett/repos/comp/src/benchs/bench_compressstore_baseline_cub.cu -o CMakeFiles/gpu_elementstuffing.dir/src/benchs/bench_compressstore_baseline_cub.cu.o",
+  "file": "/home/fett/repos/comp/src/benchs/bench_compressstore_baseline_cub.cu",
+  "output": "CMakeFiles/gpu_elementstuffing.dir/src/benchs/bench_compressstore_baseline_cub.cu.o"
+},
+{
+  "directory": "/home/fett/repos/comp",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler -DTHRUST_IGNORE_CUB_VERSION_CHECK --options-file CMakeFiles/gpu_elementstuffing.dir/includes_CUDA.rsp -std=c++14 \"--generate-code=arch=compute_75,code=[compute_75,sm_75]\" \"--generate-code=arch=compute_61,code=[compute_61,sm_61]\" -x cu -c /home/fett/repos/comp/src/benchs/bench_filter_baseline.cu -o CMakeFiles/gpu_elementstuffing.dir/src/benchs/bench_filter_baseline.cu.o",
+  "file": "/home/fett/repos/comp/src/benchs/bench_filter_baseline.cu",
+  "output": "CMakeFiles/gpu_elementstuffing.dir/src/benchs/bench_filter_baseline.cu.o"
+},
+{
+  "directory": "/home/fett/repos/comp",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler -DTHRUST_IGNORE_CUB_VERSION_CHECK --options-file CMakeFiles/gpu_elementstuffing.dir/includes_CUDA.rsp -std=c++14 \"--generate-code=arch=compute_75,code=[compute_75,sm_75]\" \"--generate-code=arch=compute_61,code=[compute_61,sm_61]\" -x cu -c /home/fett/repos/comp/src/benchs/bench_filter_nogaps.cu -o CMakeFiles/gpu_elementstuffing.dir/src/benchs/bench_filter_nogaps.cu.o",
+  "file": "/home/fett/repos/comp/src/benchs/bench_filter_nogaps.cu",
+  "output": "CMakeFiles/gpu_elementstuffing.dir/src/benchs/bench_filter_nogaps.cu.o"
+},
+{
+  "directory": "/home/fett/repos/comp",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler -DTHRUST_IGNORE_CUB_VERSION_CHECK --options-file CMakeFiles/gpu_elementstuffing.dir/includes_CUDA.rsp -std=c++14 \"--generate-code=arch=compute_75,code=[compute_75,sm_75]\" \"--generate-code=arch=compute_61,code=[compute_61,sm_61]\" -x cu -c /home/fett/repos/comp/src/benchs/bench_filter_slabs.cu -o CMakeFiles/gpu_elementstuffing.dir/src/benchs/bench_filter_slabs.cu.o",
+  "file": "/home/fett/repos/comp/src/benchs/bench_filter_slabs.cu",
+  "output": "CMakeFiles/gpu_elementstuffing.dir/src/benchs/bench_filter_slabs.cu.o"
+},
+{
+  "directory": "/home/fett/repos/comp",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler -DTHRUST_IGNORE_CUB_VERSION_CHECK --options-file CMakeFiles/gpu_elementstuffing.dir/includes_CUDA.rsp -std=c++14 \"--generate-code=arch=compute_75,code=[compute_75,sm_75]\" \"--generate-code=arch=compute_61,code=[compute_61,sm_61]\" -x cu -c /home/fett/repos/comp/src/benchs/bench_groupby_sm_array.cu -o CMakeFiles/gpu_elementstuffing.dir/src/benchs/bench_groupby_sm_array.cu.o",
+  "file": "/home/fett/repos/comp/src/benchs/bench_groupby_sm_array.cu",
+  "output": "CMakeFiles/gpu_elementstuffing.dir/src/benchs/bench_groupby_sm_array.cu.o"
+},
+{
+  "directory": "/home/fett/repos/comp",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler -DTHRUST_IGNORE_CUB_VERSION_CHECK --options-file CMakeFiles/gpu_elementstuffing.dir/includes_CUDA.rsp -std=c++14 \"--generate-code=arch=compute_75,code=[compute_75,sm_75]\" \"--generate-code=arch=compute_61,code=[compute_61,sm_61]\" -x cu -c /home/fett/repos/comp/src/benchs/bench_groupby_sort_cub.cu -o CMakeFiles/gpu_elementstuffing.dir/src/benchs/bench_groupby_sort_cub.cu.o",
+  "file": "/home/fett/repos/comp/src/benchs/bench_groupby_sort_cub.cu",
+  "output": "CMakeFiles/gpu_elementstuffing.dir/src/benchs/bench_groupby_sort_cub.cu.o"
+},
+{
+  "directory": "/home/fett/repos/comp",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler -DTHRUST_IGNORE_CUB_VERSION_CHECK --options-file CMakeFiles/gpu_elementstuffing.dir/includes_CUDA.rsp -std=c++14 \"--generate-code=arch=compute_75,code=[compute_75,sm_75]\" \"--generate-code=arch=compute_61,code=[compute_61,sm_61]\" -x cu -c /home/fett/repos/comp/src/benchs/bench_hop_baseline_cub.cu -o CMakeFiles/gpu_elementstuffing.dir/src/benchs/bench_hop_baseline_cub.cu.o",
+  "file": "/home/fett/repos/comp/src/benchs/bench_hop_baseline_cub.cu",
+  "output": "CMakeFiles/gpu_elementstuffing.dir/src/benchs/bench_hop_baseline_cub.cu.o"
+},
+{
+  "directory": "/home/fett/repos/comp",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler -DTHRUST_IGNORE_CUB_VERSION_CHECK --options-file CMakeFiles/gpu_elementstuffing.dir/includes_CUDA.rsp -std=c++14 \"--generate-code=arch=compute_75,code=[compute_75,sm_75]\" \"--generate-code=arch=compute_61,code=[compute_61,sm_61]\" -x cu -c /home/fett/repos/comp/src/benchs/bench_hop_nogaps.cu -o CMakeFiles/gpu_elementstuffing.dir/src/benchs/bench_hop_nogaps.cu.o",
+  "file": "/home/fett/repos/comp/src/benchs/bench_hop_nogaps.cu",
+  "output": "CMakeFiles/gpu_elementstuffing.dir/src/benchs/bench_hop_nogaps.cu.o"
+},
+{
+  "directory": "/home/fett/repos/comp",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler -DTHRUST_IGNORE_CUB_VERSION_CHECK --options-file CMakeFiles/gpu_elementstuffing.dir/includes_CUDA.rsp -std=c++14 \"--generate-code=arch=compute_75,code=[compute_75,sm_75]\" \"--generate-code=arch=compute_61,code=[compute_61,sm_61]\" -x cu -c /home/fett/repos/comp/src/benchs/bench_hop_slabs.cu -o CMakeFiles/gpu_elementstuffing.dir/src/benchs/bench_hop_slabs.cu.o",
+  "file": "/home/fett/repos/comp/src/benchs/bench_hop_slabs.cu",
+  "output": "CMakeFiles/gpu_elementstuffing.dir/src/benchs/bench_hop_slabs.cu.o"
+},
+{
+  "directory": "/home/fett/repos/comp",
+  "command": "/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler -DTHRUST_IGNORE_CUB_VERSION_CHECK --options-file CMakeFiles/gpu_elementstuffing.dir/includes_CUDA.rsp -std=c++14 \"--generate-code=arch=compute_75,code=[compute_75,sm_75]\" \"--generate-code=arch=compute_61,code=[compute_61,sm_61]\" -x cu -c /home/fett/repos/comp/src/main.cu -o CMakeFiles/gpu_elementstuffing.dir/src/main.cu.o",
+  "file": "/home/fett/repos/comp/src/main.cu",
+  "output": "CMakeFiles/gpu_elementstuffing.dir/src/main.cu.o"
+}
+]
