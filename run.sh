@@ -1,3 +1,4 @@
+cmake -E make_directory repro
 #all other experiments
 ./build/gpu_elementstuffing   > repro/1gib
 
