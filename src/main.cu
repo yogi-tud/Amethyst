@@ -243,7 +243,10 @@ int main(int argc, char** argv)
     if (use_rng) {
         for (size_t i = 0; i < data_size / sizeof(uint64_t); i++) {
             h_data1[i] = ((uint64_t)rng.rand()) << 32 | (uint64_t)rng.rand();
+            if(h_data1[i]==0)h_data1[i]=1;; //minimum value for random data is 1 so mod and div always work
+
             h_data2[i] = ((uint64_t)rng.rand()) << 32 | (uint64_t)rng.rand();
+            if(h_data2[i]==0)h_data2[i]=1;
         }
     }
     else {
@@ -299,7 +302,8 @@ int main(int argc, char** argv)
 
     //write a loop that iterates over d_data1 and summarizes it
      
-  
+ // wantbits=30;
+//  bench_part=1;
 
     if(bench_part == 0 || bench_part == 2)
     {
@@ -314,7 +318,7 @@ int main(int argc, char** argv)
     DECLARE_AND_CALL(bench_hop_baseline);
    DECLARE_AND_CALL(bench_hop_nogaps);
     DECLARE_AND_CALL(bench_hop_slabs);
-   DECLARE_AND_CALL(bench_binary_op_baseline);
+   
     }
 
     if(bench_part == 1 || bench_part == 2)
@@ -322,10 +326,11 @@ int main(int argc, char** argv)
     
     DECLARE_AND_CALL(bench_binary_op_nogaps);
     DECLARE_AND_CALL(bench_binary_op_slabs);
+    DECLARE_AND_CALL(bench_binary_op_baseline);
 
-    DECLARE_AND_CALL(bench_filter_baseline);
-    DECLARE_AND_CALL(bench_filter_nogaps);
-    DECLARE_AND_CALL(bench_filter_slabs);
+    //DECLARE_AND_CALL(bench_filter_baseline);
+    //DECLARE_AND_CALL(bench_filter_nogaps);
+  //  DECLARE_AND_CALL(bench_filter_slabs);
     }
 
 

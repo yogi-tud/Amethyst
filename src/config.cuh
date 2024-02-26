@@ -7,11 +7,40 @@ constexpr __host__ __device__ uint64_t op_add(uint64_t l, uint64_t r)
 {
     return (l + r) & gen_bitmask(bits);
 }
+
+template <int bits>
+constexpr __host__ __device__ uint64_t op_math(uint64_t l, uint64_t r)
+{
+    return ((l*l + r*r + 4*l) / (l*l + r*r +5*l)) & gen_bitmask(bits);
+}
+
+template <int bits>
+constexpr __host__ __device__ uint64_t op_mod(uint64_t l, uint64_t r)
+{
+    return (l % r) & gen_bitmask(bits);
+}
+template <int bits>
+constexpr __host__ __device__ uint64_t op_div(uint64_t l, uint64_t r)
+{
+    return (l / r) & gen_bitmask(bits);
+}
 template <int bits>
 constexpr __host__ __device__ uint64_t op_mul(uint64_t l, uint64_t r)
 {
     return (l * r) & gen_bitmask(bits);
 }
+template <int bits>
+constexpr __host__ __device__ uint64_t op_bool_simple(uint64_t l, uint64_t r)
+{
+    return (l  ||  r) & gen_bitmask(bits);
+}
+
+template <int bits>
+constexpr __host__ __device__ uint64_t op_bool_complex(uint64_t l, uint64_t r)
+{
+    return ((l && !r) || (!l && r)) & gen_bitmask(bits);
+}
+
 constexpr __host__ __device__ int op_add_outbits(int bits)
 {
     return bits == 64 ? 64 : bits + 1;
@@ -19,6 +48,10 @@ constexpr __host__ __device__ int op_add_outbits(int bits)
 constexpr __host__ __device__ int op_mul_outbits(int bits)
 {
     return bits * 2 >= 64 ? 64 : bits * 2;
+}
+constexpr __host__ __device__ int op_mod_outbits(int bits)
+{
+    return bits == 64 ? 64 : bits;
 }
 
 inline __device__ uint64_t cuda_atomic_add(uint64_t* p, uint64_t v)
@@ -41,8 +74,16 @@ inline __device__ uint64_t HOP_OP_ATOMIC(uint64_t* p, uint64_t v)
 template <int bits>
 constexpr __host__ __device__ uint64_t BINARY_OP(uint64_t a, uint64_t b)
 {
-    return op_add<op_add_outbits(bits)>(a, b);
+    //return op_add<op_add_outbits(bits)>(a, b);
+   // return op_div<op_mod_outbits(bits)>(a, b);
+   //return op_mod<op_mod_outbits(bits)>(a, b);
+   // return op_bool_simple<op_mod_outbits(bits)>(a, b);
+
+ return op_mul<op_mul_outbits(bits)>(a, b);
+  
+   
 }
+
 constexpr __host__ __device__ int BINARY_OP_OUTBITS(int bits)
 {
     return op_add_outbits(bits);
