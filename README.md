@@ -4,6 +4,8 @@ input format and to output the result in an arbitrary (un)compressed format.
 
 # Overview of repo
 
+/src contains Amethyst source code
+
 /visualisation contains additional visualisations
 
 /data contains all experiment data
