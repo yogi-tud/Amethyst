@@ -3,7 +3,9 @@ Amethyst is a generalized on-the-fly de/re-compression framework for GPUs. Our d
 input format and to output the result in an arbitrary (un)compressed format.
 
 # Overview of repo
+
 /visualisation contains additional visualisations
+
 /data contains all experiment data
 
 # Build and run experiments
