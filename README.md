@@ -23,11 +23,9 @@ Results are stored in /repro
 
 # Paper
 
-@inproceedings{fett2024amethyst,
-  title={Amethyst-A Generalized on-the-Fly De/Re-compression Framework to Accelerate Data-Intensive Integer Operations on GPUs},
-  author={Fett, Johannes and Habich, Dirk and Lehner, Wolfgang},
-  booktitle={European Conference on Advances in Databases and Information Systems},
-  pages={107--120},
-  year={2024},
-  organization={Springer}
+
+[Amethyst-A Generalized on-the-Fly De/Re-compression Framework to Accelerate Data-Intensive Integer Operations on GPUs,] (https://link.springer.com/chapter/10.1007/978-3-031-70626-4_8)
+author={Fett, Johannes and Habich, Dirk and Lehner, Wolfgang},
+booktitle={European Conference on Advances in Databases and Information Systems},
+  
 }
