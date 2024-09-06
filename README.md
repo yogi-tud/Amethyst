@@ -21,3 +21,13 @@ Matrix experiments are excluded, as the needed runtime of 6 weeks is deemed too 
 
 Results are stored in /repro
 
+# Paper
+
+@inproceedings{fett2024amethyst,
+  title={Amethyst-A Generalized on-the-Fly De/Re-compression Framework to Accelerate Data-Intensive Integer Operations on GPUs},
+  author={Fett, Johannes and Habich, Dirk and Lehner, Wolfgang},
+  booktitle={European Conference on Advances in Databases and Information Systems},
+  pages={107--120},
+  year={2024},
+  organization={Springer}
+}
